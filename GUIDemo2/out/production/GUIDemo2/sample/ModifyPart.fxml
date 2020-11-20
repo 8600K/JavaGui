@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ModifyPartController">
+   <children>
+      <HBox layoutY="32.0" prefHeight="50.0" prefWidth="500.0">
+         <children>
+            <Label text="Modify Part">
+               <padding>
+                  <Insets left="84.0" top="16.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="inHouseRdoBtn" mnemonicParsing="false" onAction="#onRdoBtnChange" text="In-House">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="84.0" top="16.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="outSourcedRdoBtn" mnemonicParsing="false" onAction="#onRdoBtnChange" text="Outsourced">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="84.0" top="16.0" />
+               </padding>
+            </RadioButton>
+         </children>
+      </HBox>
+      <VBox layoutX="32.0" layoutY="100.0" prefHeight="332.0" prefWidth="132.0">
+         <children>
+            <Label text="ID">
+               <padding>
+                  <Insets left="20.0" top="18.0" />
+               </padding>
+            </Label>
+            <Label text="Name">
+               <padding>
+                  <Insets left="20.0" top="18.0" />
+               </padding>
+            </Label>
+            <Label text="Inv">
+               <padding>
+                  <Insets left="20.0" top="18.0" />
+               </padding>
+            </Label>
+            <Label text="Price/Cost">
+               <padding>
+                  <Insets left="20.0" top="18.0" />
+               </padding>
+            </Label>
+            <Label text="Max">
+               <padding>
+                  <Insets left="20.0" top="18.0" />
+               </padding>
+            </Label>
+            <Label fx:id="rdoLabel" text="Machine ID">
+               <padding>
+                  <Insets left="20.0" top="18.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="164.0" layoutY="100.0" prefHeight="332.0" prefWidth="164.0">
+         <children>
+            <TextField fx:id="idTxt" disable="true" editable="false">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="nameTxt">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="invTxt">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="priceTxt">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="maxTxt">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="swappableTxt">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox alignment="BOTTOM_LEFT" layoutX="328.0" layoutY="100.0" prefHeight="332.0" prefWidth="164.0">
+         <children>
+            <Label text="Min">
+               <padding>
+                  <Insets left="48.0" />
+               </padding>
+            </Label>
+            <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#saveButton" text="Save">
+               <VBox.margin>
+                  <Insets top="128.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="BOTTOM_LEFT" layoutX="450.0" layoutY="100.0" prefHeight="332.0" prefWidth="164.0">
+         <children>
+            <TextField fx:id="minTxt" maxWidth="164.0" />
+            <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#goBackToMainScene" text="Cancel">
+               <VBox.margin>
+                  <Insets top="128.0" />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
+   </children>
+</AnchorPane>

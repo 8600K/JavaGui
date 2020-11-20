@@ -1,0 +1,17 @@
+Index: src/sample/MainController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/sample/MainController.java	(date 1604274835965)
++++ src/sample/MainController.java	(date 1604274835965)
+@@ -318,9 +318,7 @@
+ 
+ 
+ 
+-        DataArray.testing();
+ 
+-        dataArray.partLL.add(partData0);
+ 
+ 
+     }
